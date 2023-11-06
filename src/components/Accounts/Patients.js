@@ -1,23 +1,57 @@
 import React from "react";
 import Menu from "../Menu";
-import { Link } from "react-router-dom";
 
-const Managelab = () => {
+const Patients = () => {
   return (
     <div className="d-flex ">
       <div className="col-2 bg-light p-0">
-        <Menu/>
-     </div>
+      <Menu/>
+      </div>
       <div className="col-10 p-0">
         <nav className="d-flex bg-light border border-bottom-info p-2">
-        <Link to="/dashboardpage" className="text-decoration-none text-dark">
-            <i className="bi bi-house-fill"></i>&nbsp;Home&nbsp;&gt;
-          </Link>&nbsp;Centers&nbsp;&gt;&nbsp;Manage Lab&nbsp;</nav>        
-        <h4 className="mt-2 ms-2 text-primary">Manage Labs</h4>
+          <i className="bi bi-house-fill"></i>&nbsp;Home&nbsp;&gt;&nbsp;Accounts&nbsp;&gt;&nbsp;&nbsp;Patients&nbsp;
+        </nav>
+        <h4 className="mt-2 ms-2 text-primary">Patients</h4>
         <hr className="ms-4 me-4" />
         <div class="d-flex justify-content-between">
           <div class="pull-left p-3">
             <div class="btn-overlap btn-group">
+              <a
+                href="/"
+                class="btn btn-white btn-primary btn-bold"
+                tabindex="0"
+                aria-controls="dynamic-table"
+                data-original-title=""
+                title=""
+              >
+                <span>
+                  <i class="fa fa-search bigger-110 blue"></i>{" "}
+                </span>
+              </a>
+              <a
+                href="/"
+                class="btn btn-white btn-primary btn-bold"
+                tabindex="0"
+                aria-controls="dynamic-table"
+                data-original-title=""
+                title=""
+              >
+                <span>
+                  <i class="fa fa-copy bigger-110 pink"></i>{" "}
+                </span>
+              </a>
+              <a
+                href="/"
+                class="btn btn-white btn-primary btn-bold"
+                tabindex="0"
+                aria-controls="dynamic-table"
+                data-original-title=""
+                title=""
+              >
+                <span>
+                  <i class="fa fa-database bigger-110 orange"></i>{" "}
+                </span>
+              </a>
               <a
                 href="/"
                 class="btn btn-white btn-primary btn-bold"
@@ -45,24 +79,27 @@ const Managelab = () => {
             className="table-header p-2 text-white fs-5"
             style={{ background: "#307ECC", width: "100%" }}
           >
-          Results for "Latest Registered Domains"
+          Results for "List of Patients"
           </div>
           <div
             className="d-flex justify-content-between"
             style={{ background: "#EFF3F8", width: "100%" }}
           >
             <div className="p-2">
-              <label>Display records</label>
-              <select
-                name="dynamic-table_length"
-                aria-controls="dynamic-table"
-                class="form-control"
-              >
-                <option value="10">10</option>
-                <option value="25">25</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-              </select>{" "}
+              <label>
+                Display records
+                </label>
+                <select
+                  name="dynamic-table_length"
+                  aria-controls="dynamic-table"
+                  class="form-control"
+                >
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>{" "}
+                
             </div>
             <div className="p-2">
               <label>Search:</label>
@@ -94,16 +131,6 @@ const Managelab = () => {
                   aria-controls="dynamic-table"
                   rowspan="1"
                   colspan="1"
-                  aria-label="ID: activate to sort column ascending"
-                >
-                  ID
-                </th>
-                <th
-                  className="sorting"
-                  tabindex="0"
-                  aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
                   aria-label="Name: activate to sort column ascending"
                 >
                   Name
@@ -116,17 +143,7 @@ const Managelab = () => {
                   colspan="1"
                   aria-label="Address:activate to sort column ascending"
                 >
-                  Address
-                </th>
-                <th
-                  className="hidden-480 sorting"
-                  tabindex="0"
-                  aria-controls="dynamic-table"
-                  rowspan="1"
-                  colspan="1"
-                  aria-label="City: activate to sort column ascending"
-                >
-                  City
+                  Email
                 </th>
                 <th
                   className="hidden-480 sorting"
@@ -136,7 +153,7 @@ const Managelab = () => {
                   colspan="1"
                   aria-label="Timings: activate to sort column ascending"
                 >
-                  Timings
+                  Email verification
                 </th>
                 <th
                   className="hidden-480 sorting_disabled"
@@ -144,8 +161,25 @@ const Managelab = () => {
                   colspan="1"
                   aria-label="Status"
                 >
-                  Status
+                 Account Status
                 </th>
+                <th
+                  className="hidden-480 sorting_disabled"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="Status"
+                >
+                 Payment Status
+                </th>
+                <th
+                  className="hidden-480 sorting_disabled"
+                  rowspan="1"
+                  colspan="1"
+                  aria-label="Status"
+                >
+                 Actions
+                </th>
+
               </tr>
             </thead>
             <tbody>
@@ -156,14 +190,14 @@ const Managelab = () => {
                     <span className="lbl"></span>
                   </label>
                 </td>
-                <td>1</td>
-                <td>toprani</td>
+            
+                <td>Mary Dsouza	</td>
 
-                <td>45114 cypress mill</td>
+                <td>abcd12@gmail.com</td>
 
-                <td className="hidden-480">chatilly</td>
-                <td className="hidden-480">09:00AM - 10:00PM</td>
-
+                <td className="hidden-480">Active</td>
+                <td className="hidden-480">active</td>
+                <td className="hidden-480">Active</td>
                 <td>
                   <div className="hidden-sm hidden-xs action-buttons d-flex justify-content-around">
                     <a
@@ -174,7 +208,7 @@ const Managelab = () => {
                     >
                       <button
                         type="button"
-                        className="btn btn-primary"
+                        className=""
                         data-toggle="modal"
                         data-target="#myModal25"
                       >
@@ -205,13 +239,14 @@ const Managelab = () => {
                     <span className="lbl"></span>
                   </label>
                 </td>
-                <td>2</td>
-                <td>aimic</td>
+            
+                <td>Pooja Sharma</td>
 
-                <td>7890,josepj</td>
+                <td>pooja.sharma@gmail.com</td>
 
-                <td className="hidden-480">fairfax</td>
-                <td className="hidden-480">10:00AM - 11:00PM</td>
+                <td className="hidden-480">inactive</td>
+                <td className="hidden-480">active</td>
+                <td>inactive</td>
 
                 <td>
                   <div className="hidden-sm hidden-xs action-buttons d-flex justify-content-around">
@@ -223,7 +258,7 @@ const Managelab = () => {
                     >
                       <button
                         type="button"
-                        className="btn btn-primary"
+                        className=""
                         data-toggle="modal"
                         data-target="#myModal56"
                       >
@@ -258,7 +293,7 @@ const Managelab = () => {
                 role="status"
                 aria-live="polite"
               >
-                Showing 1 to 5 of 5 entries
+                Showing 1 to 7 of 7 entries
               </div>
             </div>
             <div class="pull-left p-2">
@@ -304,7 +339,6 @@ const Managelab = () => {
           </div>
           </div>
         </div>
-
         <hr></hr>
         <footer className="page-footer font-small bg-blue m-4">
           <div className="footer-copyright text-center">
@@ -317,4 +351,4 @@ const Managelab = () => {
   );
 };
 
-export default Managelab;
+export default Patients;

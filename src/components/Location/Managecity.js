@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "../Menu";
+import { Link } from "react-router-dom";
 
 const Managecity = () => {
   return (
@@ -9,8 +10,9 @@ const Managecity = () => {
      </div>
       <div className="col-10 p-0">
         <nav className="d-flex bg-light border border-bottom-info p-2">
-        <i className="bi bi-house-fill"></i>&nbsp;Home&nbsp;&gt;&gt;&nbsp;Managestate&nbsp;&gt;&nbsp;Managecity&nbsp&nbsp;&gt;&nbsp;Managelocation&nbsp;
-        </nav>
+        <Link to="/dashboardpage" className="text-decoration-none text-dark">
+            <i className="bi bi-house-fill"></i>&nbsp;Home&nbsp;&gt;
+          </Link>&nbsp;Locations&nbsp;&gt;&nbsp;Manage City&nbsp;               </nav>
         <h4 className="mt-2 ms-2 text-primary">Manage City</h4>
         <hr className="ms-4 me-4" />
         <div class="d-flex justify-content-between">

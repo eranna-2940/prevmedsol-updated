@@ -1,5 +1,6 @@
 import React from "react";
 import Menu from "./Menu";
+import { Link } from "react-router-dom";
 
 function DashboardPage() {
   return (
@@ -10,8 +11,9 @@ function DashboardPage() {
 
       <div className="col-10 p-0">
         <nav className="d-flex bg-light border border-bottom-info p-2">
-          <i className="bi bi-house-fill"></i>&nbsp;Home&nbsp;&gt;
-        </nav>
+        <Link to="/dashboardpage" className="text-decoration-none">
+            <i className="bi bi-house-fill"></i>&nbsp;Home&nbsp;
+          </Link>        </nav>
         {/* dashboard */}
         <h4 className="mt-2 ms-2 text-primary">Dashboard</h4>
         <hr></hr>

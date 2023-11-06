@@ -2,6 +2,7 @@ import React ,{useState} from "react";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import Menu from "../Menu";
+import { Link } from "react-router-dom";
 
 const Labappoinment = () => {
     const [key, setKey] = useState('Upcoming');
@@ -13,8 +14,10 @@ const Labappoinment = () => {
       </div>
       <div className="col-10 p-0">
         <nav className="d-flex bg-light border border-bottom-info p-2">
-          <i className="bi bi-house-fill"></i>&nbsp;Home&nbsp;&gt;&nbsp;Add Appointment&nbsp;&gt;&nbsp;Lab Appointment&nbsp;&gt;
-        </nav>
+        <Link to="/dashboardpage" className="text-decoration-none text-dark">
+            <i className="bi bi-house-fill"></i>&nbsp;Home&nbsp;&gt;
+          </Link>&nbsp;Appointment&nbsp;&gt;&nbsp;Lab Appointment&nbsp;               
+          </nav>
         <h4 className="mt-2 ms-2 text-primary">Lab Appoinment</h4>
         <hr className="ms-4 me-4" />
         <div className="p-2">

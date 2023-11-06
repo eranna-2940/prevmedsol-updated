@@ -12,7 +12,7 @@ export default function Menu() {
           <h2 className="accordion-header" id="flush-headingOne">
             <Link
               className="accordion-button collapsed text-decoration-none text-dark"
-              to='/'
+              to='/dashboardpage'
             >
               <div>
                 <i className="bi bi-speedometer"></i>
@@ -47,8 +47,8 @@ export default function Menu() {
               <ul className="list-group">
                 <li className="list-group-item"><Link to='/addcenter' className="text-decoration-none text-dark">Add Center</Link></li>
                 <li className="list-group-item"><Link to='/addlab' className="text-decoration-none text-dark">Add Lab</Link></li>
-                <li className="list-group-item"><Link to='/Managecenter' className="text-decoration-none text-dark">Manage Centers</Link></li>
-                <li className="list-group-item"><Link to='/Managelab' className="text-decoration-none text-dark">Manage Labs</Link></li>
+                <li className="list-group-item"><Link to='/managecenter' className="text-decoration-none text-dark">Manage Centers</Link></li>
+                <li className="list-group-item"><Link to='/managelab' className="text-decoration-none text-dark">Manage Labs</Link></li>
               </ul>
             </div>
           </div>
@@ -77,8 +77,8 @@ export default function Menu() {
           >
             <div className="accordion-body p-0">
               <ul className="list-group">
-                <li className="list-group-item"><Link to='/addDoctor' className="text-decoration-none text-dark">Add Doctor</Link></li>
-                <li className="list-group-item"><Link to='/addPatient' className="text-decoration-none text-dark">Add Patient</Link></li>
+                <li className="list-group-item"><Link to='/adddoctor' className="text-decoration-none text-dark">Add Doctor</Link></li>
+                <li className="list-group-item"><Link to='/addpatient' className="text-decoration-none text-dark">Add Patient</Link></li>
                 <li className="list-group-item"><Link to='/addlabagent' className="text-decoration-none text-dark">Add Lab Agent</Link></li>
               </ul>
             </div>
@@ -109,9 +109,9 @@ export default function Menu() {
           >
             <div className="accordion-body p-0">
               <ul className="list-group">
-                <li className="list-group-item"><Link to='/Addappointment' className="text-decoration-none text-dark">Add Appointment</Link></li>
-                <li className="list-group-item"><Link to='/Patientappointment' className="text-decoration-none text-dark">Patient Appointment</Link></li>
-                <li className="list-group-item"><Link to='/Labappoinment' className="text-decoration-none text-dark">Lab Appointment</Link></li>
+                <li className="list-group-item"><Link to='/addappointment' className="text-decoration-none text-dark">Add Appointment</Link></li>
+                <li className="list-group-item"><Link to='/patientappointment' className="text-decoration-none text-dark">Patient Appointment</Link></li>
+                <li className="list-group-item"><Link to='/labappoinment' className="text-decoration-none text-dark">Lab Appointment</Link></li>
               </ul>
             </div>
           </div>
@@ -141,9 +141,9 @@ export default function Menu() {
           >
             <div className="accordion-body p-0">
               <ul className="list-group">
-                <li className="list-group-item"><Link to='/Managestate' className="text-decoration-none text-dark">Manage State</Link></li>
-                <li className="list-group-item"><Link to='/Managecity' className="text-decoration-none text-dark">Manage City</Link></li>
-                <li className="list-group-item"><Link to='/Managelocation' className="text-decoration-none text-dark">Manage Location</Link></li>
+                <li className="list-group-item"><Link to='/managestate' className="text-decoration-none text-dark">Manage State</Link></li>
+                <li className="list-group-item"><Link to='/managecity' className="text-decoration-none text-dark">Manage City</Link></li>
+                <li className="list-group-item"><Link to='/managelocation' className="text-decoration-none text-dark">Manage Location</Link></li>
               </ul>
             </div>
           </div>
@@ -173,13 +173,12 @@ export default function Menu() {
           >
             <div className="accordion-body p-0">
               <ul className="list-group">
-                <li className="list-group-item"><Link to='/Managepackage' className="text-decoration-none text-dark">Manage Package</Link></li>
-                <li className="list-group-item"><Link to='/Addpackage' className="text-decoration-none text-dark">Add Package</Link></li>
+                <li className="list-group-item"><Link to='/managepackage' className="text-decoration-none text-dark">Manage Package</Link></li>
+                <li className="list-group-item"><Link to='/addpackage' className="text-decoration-none text-dark">Add Package</Link></li>
               </ul>
             </div>
           </div>
         </div>
-
         <div className="accordion-item">
           <h2 className="accordion-header" id="flush-headingSeven">
             <button
@@ -204,8 +203,8 @@ export default function Menu() {
           >
             <div className="accordion-body p-0">
               <ul className="list-group">
-                <li className="list-group-item"><Link to='/addPatient' className="text-decoration-none text-dark">View Payments</Link></li>
-                <li className="list-group-item"><Link to='/addPatient' className="text-decoration-none text-dark">Invoice</Link></li>
+                <li className="list-group-item"><Link to='/addpatient' className="text-decoration-none text-dark">View Payments</Link></li>
+                <li className="list-group-item"><Link to='/invoice' className="text-decoration-none text-dark">Invoice</Link></li>
               </ul>
             </div>
           </div>
@@ -235,10 +234,10 @@ export default function Menu() {
           >
             <div className="accordion-body p-0">
               <ul className="list-group">
-                <li className="list-group-item"><Link to='/addPatient' className="text-decoration-none text-dark">Site Managers</Link></li>
-                <li className="list-group-item"><Link to='/addPatient' className="text-decoration-none text-dark">Patients</Link></li>
-                <li className="list-group-item"><Link to='/addPatient' className="text-decoration-none text-dark">Doctors</Link></li>
-                <li className="list-group-item"><Link to='/addPatient' className="text-decoration-none text-dark">Lab Agents</Link></li>
+                <li className="list-group-item"><Link to='/patients' className="text-decoration-none text-dark">Site Managers</Link></li>
+                <li className="list-group-item"><Link to='/patients' className="text-decoration-none text-dark">Patients</Link></li>
+                <li className="list-group-item"><Link to='/doctors' className="text-decoration-none text-dark">Doctors</Link></li>
+                <li className="list-group-item"><Link to='/labagents' className="text-decoration-none text-dark">Lab Agents</Link></li>
               </ul>
             </div>
           </div>
